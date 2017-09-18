@@ -4,8 +4,124 @@
 	<meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet" href="./public/styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Raleway:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<script src="https://use.fontawesome.com/67f595ad7c.js"></script>
+	<link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+	<script src="node_modules/aos/dist/aos.js"></script> 
+	<script src="node_modules/smooth-scroll/dist/js/smooth-scroll.js"></script>
 </head>
 <body>
+	<header id="header">
+		<div class="fullscreen-bg">
+		    <video loop muted autoplay poster="public/assets/video/Snapshots/Love-Coding.jpg" class="fullscreen-bg__video">
+		        <source src="public/assets/video/WEBM/Love-Coding.webm" type="video/webm">
+		        <source src="public/assets/video/Love-Coding.mp4" type="video/mp4">
+		    </video>
+		    <img src="public/assets/video/Snapshots/Love-Coding.jpg" alt="">
+		</div>
+		<h2 class="logo">RC</h2>
+		<ul class="header__nav">
+			<li class="navItem"><a href="#header">Home</a></li>
+			<li class="navItem"><a href="#bio">Bio</a></li>
+			<li class="navItem"><a href="#skills">Skills</a></li>
+			<li class="navItem"><a href="#portfolio">Portfolio</a></li>
+			<li class="navItem"><a href="#footer">Contact</a></li>
+		</ul>
+		<div class="header__flexContainer">
+			<h1 class="header__title">Rob Chang</h1>
+			<p class="header__description">Hover state enthusiast </p>
+			<a href="#bio" class="header__button button">Learn more</a>
+		</div>
+	</header>
+	<main> 
+		<section id="bio" >
+			<div class="bio__wrapper">
+				<div class="bio__textContainer">
+					<h3 class="bio__header">Portfolio</h3>
+					<h2 class="bio__description">My name is Rob. I am a Toronto-based Front-end Developer specializing in building functional websites with JavaScript and React.</h2>
+					<a href="#" class="bio__button button">Learn more</a> 
+				</div>
+				<div class="bio__imageContainer">
+					<img src='public/assets/headshot.png' alt="" class="bio__image"> 
+				</div>
+			</div>
+		</section>
+		<section id="skills">
+			<div class="skills__wrapper">
+				<div class="skills__top">
+					<i class="devicon-html5-plain-wordmark"></i>
+					<i class="devicon-css3-plain-wordmark"></i>
+					<i class="devicon-sass-original"></i>
+					<i class="devicon-git-plain-wordmark"></i>
+					<i class="devicon-github-plain-wordmark"></i>
+				</div>
+				<div class="skills__top">
+					<i class="devicon-javascript-plain"></i>
+					<i class="devicon-jquery-plain-wordmark"></i>
+					<i class="devicon-react-original-wordmark"></i>
+					<i class="devicon-gulp-plain"></i>
+					<i class="devicon-babel-plain"></i>
+				</div>
+			</div>
+		</section>
+		<section id="portfolio" class="portfolio__wrapper">
+			<div class="project__container project1__Container">
+				<div class="project__textContainer project1__textContainer" data-aos="fade-right" data-aos-duration="1000">
+					<h2 class="project__title project1__title">Animation Playground</h2>
+					<p class="project__description project1__description">Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ipsam laborum, reprehenderit id iusto alias accusantium magnam voluptatem consequuntur veniam.</p>
+					<div class="button__container">
+						<a href="#" class="project__button button">Link to project</a>
+						<a href="#" class="project__button button">Link to Github</a>
+					</div>
+
+				</div>
+				<img src="./public/assets/animation.png" alt="" class="project1__image" data-aos="zoom-in" data-aos-duration="1000">
+			</div>
+			<div class="project__container project2__container">
+				<img src="./public/assets/weather.png" alt="" class="project2__image" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="project__textContainer project2__textContainer" data-aos="fade-left" data-aos-duration="1000">
+					<h2 class="project__title project2__title">Project Title</h2>
+					<p class="project__description project2__description">Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ipsam laborum, reprehenderit id iusto alias accusantium magnam voluptatem consequuntur veniam.</p>
+					<div class="button__container">
+						<a href="#" class="project__button button">Link to project</a>
+						<a href="#" class="project__button button">Link to Github</a>
+					</div>
+				</div>
+			</div>
+			<div class="project__container project3__Container">
+				<div class="project__textContainer project3__textContainer" data-aos="fade-right" data-aos-duration="1000">
+					<h2 class="project__title project3__title">Project Title</h2>
+					<p class="project__description project3__description">Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ipsam laborum, reprehenderit id iusto alias accusantium magnam voluptatem consequuntur veniam.</p>
+					<div class="button__container">
+						<a href="#" class="project__button button">Link to project</a>
+						<a href="#" class="project__button button">Link to Github</a>
+					</div>
+				</div>
+				<img src="./public/assets/iphone.png" alt="" class="project3__image" data-aos="zoom-in" data-aos-duration="1000">
+			</div>
+		</section>
+	</main>
+	<footer id="footer">
+		<section class="footer__top">
+			<a href="#header" class="button__scrollUp"><i class="fa fa-arrow-circle-o-up footer__upArrow" aria-hidden="true"></i>scroll up</a>
+		</section>
+		<section class="footer__middle">
+			<div class="wrapper footer__wrapper">
+				<ul class="socialMedia">
+					<li><a href="https://twitter.com/robchang_" class="socialMedia__icon"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="www.linkedin.com/in/robchangca" class="socialMedia__icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+					<li><a href="https://github.com/RobChangCA" class="socialMedia__icon"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					<li><a href="https://medium.com/@robchangcanada" class="socialMedia__icon"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+				</ul>
+				<p class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i> RobChangCanada@gmail.com</p>
+			</div>
+		</section>
+		<section class="footer__bottom">
+			<p class="copyright">robchang © 2017</p>
+		</section>
+	</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="./public/scripts/main.js"></script>
 </body>
 </html>

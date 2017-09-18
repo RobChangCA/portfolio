@@ -29,7 +29,7 @@ gulp.task('scripts', () => {
 // a task to watch all other tasks
 gulp.task('watch', function() {
   gulp.watch('./dev/scripts/*.js', ['scripts']);
-  gulp.watch('./dev/styles/*.scss', ['styles']);
+  gulp.watch('./dev/styles/**/*.scss', ['styles']);
   gulp.watch('*.html', reload);
 });
 //browser sync
