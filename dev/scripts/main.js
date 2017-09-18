@@ -18,12 +18,22 @@ js.scroll = function(){
 		after: function () {} // Callback to run after scroll
 	});
 }
-
+js.menu = function(){
+	$('.hamburger').on('click', function(){
+		$('.hamburger').hide();
+		$('.hamburger__menu').css('display', 'flex');
+	});
+	$('.hamburger__item').on('click', function(){
+		$('.hamburger__menu').hide();
+		$('.hamburger').show();
+	});
+}
 
 
 js.init = function(){
 	AOS.init();
-	js.scroll(); 
+	js.scroll();
+	js.menu(); 
 };
 
 
