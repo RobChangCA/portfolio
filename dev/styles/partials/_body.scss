@@ -367,6 +367,9 @@ header{
 .email{
 	color: $logoGrey;
 	font-size: 2rem;
+	i{
+		padding-right: 5px;
+	}
 }
 //bottom
 .footer__bottom{
@@ -544,6 +547,15 @@ header{
 	.skills__top{
 		font-size: 6rem;
 	}
+	.footer__middle{
+		height: 100px;
+	}
+	.footer__wrapper{
+		flex-direction: column;
+	}
+	.socialMedia{
+
+	}
 }
 
 @media (max-width: 420px){
@@ -583,4 +595,8 @@ header{
   	.skills__top{
   		font-size: 5rem;
   	}
+  	.footer__wrapper{
+
+  	}
 }
+
