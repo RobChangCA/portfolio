@@ -6,6 +6,8 @@ html{
 }
 body{
 	background: white; 
+
+	
 }
 .wrapper{
 	max-width: 1150px;
@@ -161,24 +163,14 @@ header{
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	padding: 0 30px;
 }
 .bio__header{
 	font-family: 'Raleway', sans-serif;
 	font-size: 2.2rem;
 	font-weight: 700;
 	position: relative;
-	&::after{
-		display: block;
-		content: "";
-		background: black;
-		width: 430px;
-		height: 2px;
-		position: absolute;
-		top: 50%;
-		right: -30px;
-		transform: translateY(-50%);
-		z-index: -1;
-	}
+	
 }
 .bio__description{
 	font-size: 3rem;
@@ -229,10 +221,13 @@ header{
 //Portfolio
  #portfolio{
  	margin-top: 130px;
+ 	// max-width: 100%;
+	overflow: hidden;
  }
 .portfolio__wrapper{
 	max-width: 1170px;
 	margin: 0 auto;
+	padding: 30px;
 }
 .project__container{
 	display: flex;
@@ -256,17 +251,20 @@ header{
  .button__container{
  	display: flex;
  	width: 100%;
+ 	justify-content: flex-start;
  }
  .project__button{
  	color: black;
  	border: 3px solid black;
  	transition: all .3s;
  	display: inline-block;
- 	margin: 0 15px;
  	&:hover{
  		color:$white;
  		background: black;
  		transform: scale(1.1);
+ 	}
+ 	&:first-child{
+ 		margin-right: 20px;
  	}
  }
  .project__textContainer{
@@ -341,10 +339,12 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	height: 100%;
+	padding: 30px;
 }
 .socialMedia{
 	display: flex;
 	list-style: none;
+	padding: 0;
 }
 .socialMedia__icon{
 	background: $logoGrey;
@@ -548,10 +548,12 @@ header{
 		font-size: 6rem;
 	}
 	.footer__middle{
-		height: 100px;
+		height: 150px;
 	}
 	.footer__wrapper{
 		flex-direction: column;
+		height: 100%;
+		justify-content: space-around;
 	}
 	.socialMedia{
 
@@ -599,4 +601,3 @@ header{
 
   	}
 }
-
