@@ -28,12 +28,15 @@ js.menu = function(){
 		$('.hamburger').show();
 	});
 }
-
+js.credit = () =>{
+	console.log('Photo by Pam Pamlau');
+}
 
 js.init = function(){
 	AOS.init();
 	js.scroll();
 	js.menu(); 
+	js.credit();
 };
 
 

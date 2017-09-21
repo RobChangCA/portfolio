@@ -46,6 +46,7 @@ header{
 	max-width: 1920px;
 	height: 100vh;
 	padding: 1px;
+	margin: 0 auto;
 }
 .logo{
 	position: absolute;
@@ -155,6 +156,7 @@ header{
 	max-width: 1920px;
 	height: 800px;
 	background-image: url(../../public/assets/bio-background.png);
+	margin: 0 auto;
 }
 .bio__wrapper{
 	margin: 0 auto;
@@ -263,9 +265,9 @@ header{
  		background: black;
  		transform: scale(1.1);
  	}
- 	&:first-child{
- 		margin-right: 20px;
- 	}
+ }
+ .project__button--1{
+ 	margin-right: 20px;
  }
  .project__textContainer{
  	display: flex;
@@ -280,7 +282,8 @@ header{
 	margin-right: 200px;
 }
 .project1__image{
-	width: 570px
+	width: 570px;
+	max-height: 443px;
 }
  //project2
  .project2__textContainer{
@@ -288,10 +291,12 @@ header{
  }
 .project2__image{
 	width: 570px;
+	max-height: 443px;
 }
 //project3
 .project3__image{
 	width: 570px;
+	max-height: 443px;
 }
 .project3__textContainer{
 	margin-right: 200px;
@@ -345,6 +350,7 @@ header{
 	display: flex;
 	list-style: none;
 	padding: 0;
+
 }
 .socialMedia__icon{
 	background: $logoGrey;
