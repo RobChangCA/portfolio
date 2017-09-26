@@ -199,25 +199,27 @@ header{
 #skills{
 	background: $black;
 	height: 500px;
-	width: 100vw;
+	width: 100%;
 	color: $logoGrey;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 
 }
 .skills__wrapper{
-	max-width: 1160px;
+	width: 100%;
+	max-width: 1270px;
 	display: flex;
 	height: 500px;
 	flex-direction: column;
 	justify-content: center;
 	
 }
-.skills__top{
+.skills__container{
 	display: flex;
 	justify-content: space-around;
 	font-size: 12rem;
-	width: 100vw;
+	width: 100%;
 	margin: 30px 0;
 }
 //Portfolio
@@ -235,6 +237,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 130px;
+	align-items: center;
 }
 .project__title{
  	font-size: 5.5rem;
@@ -254,6 +257,7 @@ header{
  	display: flex;
  	width: 100%;
  	justify-content: flex-start;
+ 	align-items: flex-start;
  }
  .project__button{
  	color: black;
@@ -282,21 +286,20 @@ header{
 	margin-right: 200px;
 }
 .project1__image{
-	width: 570px;
-	max-height: 443px;
+	width: 100%;
+
 }
  //project2
  .project2__textContainer{
  	margin-left: 200px;
  }
 .project2__image{
-	width: 570px;
-	max-height: 443px;
+	width: 100%;
+
 }
 //project3
 .project3__image{
-	width: 570px;
-	max-height: 443px;
+	width: 100%;
 }
 .project3__textContainer{
 	margin-right: 200px;
