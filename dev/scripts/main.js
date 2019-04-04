@@ -1,47 +1,17 @@
-const js = {};
+const projectImages = Array.from(document.querySelectorAll('.project__image'));
+const nav = document.querySelector('nav')
+const navTop = nav.getBoundingClientRect();
+const header = document.querySelector('header');
 
-    
-js.scroll = function(){
-	var scroll = new SmoothScroll('a[href*="#"]', {
-		// Selectors
-		ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
-		header: null, // Selector for fixed headers (must be a valid CSS selector)
 
-		// Speed & Easing
-		speed: 500, // Integer. How fast to complete the scroll in milliseconds
-		offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
-		easing: 'easeInOutCubic', // Easing pattern to use
-		customEasing: function (time) {}, // Function. Custom easing pattern
-
-		// Callback API
-		before: function () {}, // Callback to run before scroll
-		after: function () {} // Callback to run after scroll
-	});
-}
-js.menu = function(){
-	$('.hamburger').on('click', function(){
-		$('.hamburger').hide();
-		$('.hamburger__menu').css('display', 'flex');
-	});
-	$('.hamburger__item').on('click', function(){
-		$('.hamburger__menu').hide();
-		$('.hamburger').show();
-	});
-}
-js.credit = () =>{
-	console.log('Photo by Pam Pamlau');
+function onScroll(e){
+	if (navTop.y <= this.scrollY){
+		nav.classList.add('sticky-nav');
+		header.classList.add('header-margin');
+	}else{
+		nav.classList.remove('sticky-nav');
+		header.classList.remove('header-margin');
+	}
 }
 
-js.init = function(){
-	AOS.init();
-	js.scroll();
-	js.menu(); 
-	js.credit();
-};
-
-
-
-
-$(function(){
-	js.init();
-});
+window.addEventListener('scroll', onScroll);

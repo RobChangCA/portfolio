@@ -3,6 +3,7 @@
 //global
 html{
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 body{
 	background: white; 
@@ -46,20 +47,37 @@ body{
 header{
 	max-width: 1920px;
 	height: 100vh;
-	padding: 1px;
 	margin: 0 auto;
 }
-.logo{
+nav{
 	position: absolute;
-	top: 30px;
-	left: 30px;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	margin-top: 20px;
+	background: rgba(0,0,0,0.4);
+	width: 100vw;
+}
+.sticky-nav{
+	position: fixed;
+	top: 0;
+	margin-top: 0;
+}
+
+.logo{
 	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border: 1px solid white;
 	font-size: 2rem;
 	padding: 5px 10px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
-
+	height: 40px;
+	width: 60px;
 
 }
 .header__nav{
@@ -68,11 +86,9 @@ header{
 	display: flex;
 	justify-content: flex-end;
 	font-size: 1.4rem; text-transform: uppercase;
-	position: absolute;
-	right: 0;
 }
 .navItem{
-	margin: 40px;
+	margin: 0 20px;
 	transition: all .3s;
 	a{
 		text-decoration: none;
@@ -99,8 +115,6 @@ header{
 }
 .hamburger__menu{
 	display: none;
-}
-.hamburger__menu{
 	position: absolute;
 	top:0;
 	bottom: 0;
@@ -114,6 +128,7 @@ header{
 	flex-direction: column;
 	background: rgba(0,0,0,0.9);
 	margin: 0;
+	padding: 0;
 	// height: 100vh;
 	// width: 100vw;
 }
@@ -155,7 +170,6 @@ header{
 #bio{
 	background: white;
 	max-width: 1920px;
-	height: 800px;
 	background-image: url(../../public/assets/bio-background.png);
 	margin: 0 auto;
 }
@@ -170,7 +184,7 @@ header{
 }
 .bio__header{
 	font-family: 'Raleway', sans-serif;
-	font-size: 2.2rem;
+	font-size: 3.5rem;
 	font-weight: 700;
 	position: relative;
 	
@@ -180,13 +194,16 @@ header{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	margin-right: 60px;
+	text-align: center;
 	
 }
 .bio__button{
 	color: black;
 	border: 3px solid black;
 	transition: all .3s;
-	display: inline-block;
+	width: 200px;
+	display: block;
+	margin: 50px auto;
 	&:hover{
 		color:$white;
 		background: black;
@@ -609,7 +626,6 @@ header{
 		font-size: 1.5rem;
 	}
 	#skills{
-		margin-top: 20px;
   		height: 200px;
   	}
   	
@@ -618,5 +634,8 @@ header{
   	}
   	.footer__wrapper{
 
-  	}
+	  }
+	.email{
+		font-size: 1.5rem;
+	}
 }

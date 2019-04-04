@@ -1,117 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Rob Chang</title>
 	<link rel="stylesheet" href="./public/styles/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Raleway:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet"
+		href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<script src="https://use.fontawesome.com/67f595ad7c.js"></script>
-	<link rel="stylesheet" href="public/styles/aos.css" />
 	<link rel="icon" href="public/assets/logo.png">
-	<script src="public/scripts/aos.js"></script> 
-	<script src="public/scripts/smooth-scroll.min.js"></script>
 </head>
+
 <body>
 	<header id="header">
 		<div class="fullscreen-bg">
-		    <video loop muted autoplay poster="public/assets/video/Snapshots/Love-Coding.jpg" class="fullscreen-bg__video">
-		        <source src="public/assets/video/WEBM/Love-Coding.webm" type="video/webm">
-		        <source src="public/assets/video/Love-Coding.mp4" type="video/mp4">
-		    </video>
-		    <img src="public/assets/video/Snapshots/Love-Coding.jpg" alt="">
+			<video loop muted autoplay poster="public/assets/video/Snapshots/Love-Coding.jpg"
+				class="fullscreen-bg__video">
+				<source src="public/assets/video/WEBM/Love-Coding.webm" type="video/webm">
+				<source src="public/assets/video/Love-Coding.mp4" type="video/mp4">
+			</video>
+			<img src="public/assets/video/Snapshots/Love-Coding.jpg" alt="">
 		</div>
-		<h2 class="logo">RC</h2>
-		<ul class="header__nav">
-			<li class="navItem"><a href="#header">Home</a></li>
-			<li class="navItem"><a href="#bio">Bio</a></li>
-			<li class="navItem"><a href="#skills">Skills</a></li>
-			<li class="navItem"><a href="#portfolio">Portfolio</a></li>
-			<li class="navItem"><a href="#footer">Contact</a></li>
-			<li class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></li>
-		</ul>
-		<ul class="hamburger__menu">
-			<li class="hamburger__item"><a href="#header">Home</a></li>
-			<li class="hamburger__item"><a href="#bio">Bio</a></li>
-			<li class="hamburger__item"><a href="#skills">Skills</a></li>
-			<li class="hamburger__item"><a href="#portfolio">Portfolio</a></li>
-			<li class="hamburger__item"><a href="#footer">Contact</a></li>
-		</ul>
+		<nav>
+			<h2 class="logo">RC</h2>
+			<ul class="header__nav">
+				<li class="navItem"><a href="#header">Home</a></li>
+				<!-- <li class="navItem"><a href="#bio">Bio</a></li> -->
+				<li class="navItem"><a href="#skills">Skills</a></li>
+				<li class="navItem"><a href="#portfolio">Portfolio</a></li>
+				<li class="navItem"><a href="#footer">Contact</a></li>
+				<li class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></li>
+			</ul>
+			<!-- <ul class="hamburger__menu">
+				<li class="hamburger__item"><a href="#header">Home</a></li>
+				<li class="hamburger__item"><a href="#bio">Bio</a></li>
+				<li class="hamburger__item"><a href="#skills">Skills</a></li>
+				<li class="hamburger__item"><a href="#portfolio">Portfolio</a></li>
+				<li class="hamburger__item"><a href="#footer">Contact</a></li>
+			</ul> -->
+		</nav>
+
 		<div class="header__flexContainer">
 			<h1 class="header__title">Rob Chang</h1>
 			<p class="header__description">FRONT END DEVELOPER</p>
 			<a href="#bio" class="header__button button">Learn more</a>
 		</div>
 	</header>
-	<main> 
+	<main>
 		<section id="bio" >
 			<div class="bio__wrapper">
 				<div class="bio__textContainer">
 					<h3 class="bio__header">Bio</h3>
-					<h2 class="bio__description">My name is Rob. I am a Toronto-based Front-end Developer specializing in building functional websites with JavaScript and React.</h2>
+					<p class="bio__description">My name is Rob. I am a Toronto-based Front-end Developer specializing in building functional websites with Angular and React. </p>
+					<p class="bio__description">I spent several years teaching English and DJing in Korea where I traveled the world and developed a love of all things tech. </p>
 					<a href="#portfolio" class="bio__button button">Portfolio</a> 
 				</div>
-				<div class="bio__imageContainer">
+				<!-- <div class="bio__imageContainer">
 					<img src='public/assets/headshot.png' alt="A photo of Rob Chang" class="bio__image"> 
-				</div>
+				</div> -->
 			</div>
 		</section>
 		<section id="skills">
 			<div class="skills__wrapper">
 				<div class="skills__container">
+					<i class="devicon-typescript-plain"></i>
+					<i class="devicon-bootstrap-plain"></i>
 					<i class="devicon-html5-plain-wordmark"></i>
 					<i class="devicon-css3-plain-wordmark"></i>
-					<i class="devicon-sass-original"></i>
-					<i class="devicon-git-plain-wordmark"></i>
+					<i class="devicon-javascript-plain"></i>
 				</div>
 				<div class="skills__container">
-					<i class="devicon-javascript-plain"></i>
-					<i class="devicon-jquery-plain-wordmark"></i>
+					<i class="devicon-git-plain-wordmark"></i>
+					<i class="devicon-sass-original"></i>
+					<i class="devicon-angularjs-plain"></i>
 					<i class="devicon-react-original-wordmark"></i>
-					<i class="devicon-gulp-plain"></i>	
+					<i class="devicon-gulp-plain"></i>
+					<i class="devicon-webpack-plain"></i>
 				</div>
 			</div>
 		</section>
 		<section id="portfolio" class="portfolio__wrapper">
 			<div class="project__container project1__container">
-				<div class="project__textContainer project1__textContainer" data-aos="fade-right" data-aos-duration="1000">
+				<div class="project__textContainer project1__textContainer" data-aos="fade-right"
+					data-aos-duration="1000">
 					<h2 class="project__title project1__title">Animation Playground</h2>
-					<img src="./public/assets/animation.png" alt="A photo of the Animation Playground" class="project1__image--responsive project__image--responsive" data-aos="zoom-in" data-aos-duration="1000">
+					<img src="./public/assets/animation.png" alt="A photo of the Animation Playground"
+						class="project1__image--responsive project__image--responsive" data-aos="zoom-in"
+						data-aos-duration="1000">
 					<p class="project__skills">React - Firebase - Aphrodite - SASS - Responsive Design </p>
-					<p class="project__description project1__description">Animation playground is a web app that uses both react and firebase to generate and store unique animations.  The code from these animations can be re purposed into other CSS projects.</p>
+					<p class="project__description project1__description">Animation playground is a web app that uses
+						both react and firebase to generate and store unique animations. The code from these animations
+						can be re purposed into other CSS projects.</p>
 					<div class="button__container">
-						<a href="http://robchang.ca/animator/" class="project__button button project__button--1">Link to project</a>
-						<a href="https://github.com/RobChangCA/Project6" class="project__button button">Link to Github</a> 
+						<a href="http://robchang.ca/animator/" class="project__button button project__button--1">Link to
+							project</a>
+						<a href="https://github.com/RobChangCA/Project6" class="project__button button">Link to
+							Github</a>
 					</div>
 				</div>
-				<img src="./public/assets/animation.png" alt="" class="project1__image project__image" data-aos="zoom-in" data-aos-duration="1000">
+				<img src="./public/assets/animation.png" alt="" class="project1__image project__image"
+					data-aos="zoom-in" data-aos-duration="1000">
 			</div>
 			<div class="project__container project2__container">
-				<img src="./public/assets/weather.png" alt="A photo of Climate Metrics" class="project2__image project__image" data-aos="zoom-in" data-aos-duration="1000">
-				<div class="project__textContainer project2__textContainer" data-aos="fade-left" data-aos-duration="1000">
+				<img src="./public/assets/weather.png" alt="A photo of Climate Metrics"
+					class="project2__image project__image" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="project__textContainer project2__textContainer" data-aos="fade-left"
+					data-aos-duration="1000">
 					<h2 class="project__title project2__title">Climate Metrics</h2>
-					<img src="./public/assets/weather.png" alt="" class="project2__image--responsive project__image--responsive" data-aos="zoom-in" data-aos-duration="1000">
-					<p class="project__skills">JavaScript - JQuery - SASS - AJAX - RESTful API - Responsive Design - BEM</p>
-					<p class="project__description project2__description">A web application that uses Darksky in conjunction with AQI's API to receive weather data.  The application then breaks down these weather metrics into more tangible measurements.  </p>
+					<img src="./public/assets/weather.png" alt=""
+						class="project2__image--responsive project__image--responsive" data-aos="zoom-in"
+						data-aos-duration="1000">
+					<p class="project__skills">JavaScript - JQuery - SASS - AJAX - RESTful API - Responsive Design - BEM
+					</p>
+					<p class="project__description project2__description">A web application that uses Darksky in
+						conjunction with AQI's API to receive weather data. The application then breaks down these
+						weather metrics into more tangible measurements. </p>
 					<div class="button__container">
-						<a href="http://robchang.ca/weather/" class="project__button button project__button--1">Link to project</a>
-						<a href="https://github.com/RobChangCA/weather" class="project__button button">Link to Github</a>
-					</div> 
+						<a href="http://robchang.ca/weather/" class="project__button button project__button--1">Link to
+							project</a>
+						<a href="https://github.com/RobChangCA/weather" class="project__button button">Link to
+							Github</a>
+					</div>
 				</div>
 			</div>
 			<div class="project__container project3__container">
-				<div class="project__textContainer project3__textContainer" data-aos="fade-right" data-aos-duration="1000">
+				<div class="project__textContainer project3__textContainer" data-aos="fade-right"
+					data-aos-duration="1000">
 					<h2 class="project__title project3__title">Univers</h2>
-					<img src="./public/assets/iphone.png" alt="" class="project3__image--responsive project__image--responsive" data-aos="zoom-in" data-aos-duration="1000">
+					<img src="./public/assets/iphone.png" alt=""
+						class="project3__image--responsive project__image--responsive" data-aos="zoom-in"
+						data-aos-duration="1000">
 					<p class="project__skills">SASS - HTML - CSS3 - Responsive Design - BEM</p>
-					<p class="project__description project3__description">A fully responsive PSD conversion for a fake client.  The site is fully responsive using media queries and flexbox.  </p>
+					<p class="project__description project3__description">A fully responsive PSD conversion for a fake
+						client. The site is fully responsive using media queries and flexbox. </p>
 					<div class="button__container">
-						<a href="http://robchang.ca/univers/" class="project__button button project__button--1">Link to project</a>
-						<a href="https://github.com/RobChangCA/university" class="project__button button">Link to Github</a>
+						<a href="http://robchang.ca/univers/" class="project__button button project__button--1">Link to
+							project</a>
+						<a href="https://github.com/RobChangCA/university" class="project__button button">Link to
+							Github</a>
 					</div>
 				</div>
-				<img src="./public/assets/iphone.png" alt="A photo of Univers" class="project3__image project__image" data-aos="zoom-in" data-aos-duration="1000">
+				<img src="./public/assets/iphone.png" alt="A photo of Univers" class="project3__image project__image"
+					data-aos="zoom-in" data-aos-duration="1000">
 			</div>
 			<!-- <div class="project__container project4__container">
 				<img src="./public/assets/weather.png" alt="A photo of Climate Metrics" class="project4__image project__image" data-aos="zoom-in" data-aos-duration="1000">
@@ -130,24 +162,31 @@
 	</main>
 	<footer id="footer">
 		<section class="footer__top">
-			<a href="#header" class="button__scrollUp"><i class="fa fa-arrow-circle-o-up footer__upArrow" aria-hidden="true"></i>scroll up</a>
+			<a href="#header" class="button__scrollUp"><i class="fa fa-arrow-circle-o-up footer__upArrow"
+					aria-hidden="true"></i>scroll up</a>
 		</section>
 		<section class="footer__middle">
 			<div class="wrapper footer__wrapper">
 				<ul class="socialMedia">
-					<li><a href="https://twitter.com/robchang_" class="socialMedia__icon"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/robchangca/" class="socialMedia__icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-					<li><a href="https://github.com/RobChangCA" class="socialMedia__icon"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-					<li><a href="https://medium.com/@robchangcanada" class="socialMedia__icon"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+					<li><a href="https://twitter.com/robchang_" class="socialMedia__icon"><i class="fa fa-twitter"
+								aria-hidden="true"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/robchangca/" class="socialMedia__icon"><i
+								class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+					<li><a href="https://github.com/RobChangCA" class="socialMedia__icon"><i class="fa fa-github"
+								aria-hidden="true"></i></a></li>
+					<li><a href="https://medium.com/@robchangcanada" class="socialMedia__icon"><i class="fa fa-medium"
+								aria-hidden="true"></i></a></li>
 				</ul>
-				<a href="mailto:robchangcanada@gmail.com" class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i>robchangcodes@gmail.com</a>
+				<a href="mailto:robchangcanada@gmail.com" class="email"><i class="fa fa-envelope-o"
+						aria-hidden="true"></i>robchangcodes@gmail.com</a>
 			</div>
 		</section>
 		<section class="footer__bottom">
-			<p class="copyright">robchang © 2017</p>
+			<p class="copyright">robchang © 2019</p>
 		</section>
 	</footer>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="./public/scripts/main.js"></script>
 </body>
+
 </html>
